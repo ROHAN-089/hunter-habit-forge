@@ -12,6 +12,7 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Quests from "./pages/Quests";
 import DailyLog from "./pages/DailyLog";
+import ShadowArmy from "./pages/ShadowArmy";
 import { AppProvider, useApp } from "./context/AppContext";
 import Index from "./pages/Index";
 
@@ -75,6 +76,16 @@ const AppRoutes = () => {
           <SidebarProvider>
             <MainLayout>
               <DailyLog />
+            </MainLayout>
+          </SidebarProvider>
+        </RequireSetup>
+      } />
+
+      <Route path="/shadows" element={
+        <RequireSetup>
+          <SidebarProvider>
+            <MainLayout>
+              <ShadowArmy />
             </MainLayout>
           </SidebarProvider>
         </RequireSetup>
