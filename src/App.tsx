@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,6 +14,8 @@ import DailyLog from "./pages/DailyLog";
 import ShadowArmy from "./pages/ShadowArmy";
 import { AppProvider, useApp } from "./context/AppContext";
 import Index from "./pages/Index";
+import Codex from "./pages/Codex";
+import Settings from "./pages/Settings";
 
 const queryClient = new QueryClient();
 
