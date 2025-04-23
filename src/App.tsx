@@ -1,8 +1,10 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import MainLayout from "./components/layouts/MainLayout";
 import NotFound from "./pages/NotFound";
 import ProfileSetup from "./pages/ProfileSetup";
@@ -11,6 +13,7 @@ import Profile from "./pages/Profile";
 import Quests from "./pages/Quests";
 import DailyLog from "./pages/DailyLog";
 import { AppProvider, useApp } from "./context/AppContext";
+import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
@@ -29,41 +32,51 @@ const PreventSetupAccess = ({ children }: { children: React.ReactNode }) => {
 const AppRoutes = () => {
   return (
     <Routes>
+      <Route path="/" element={<Index />} />
+      
       <Route path="/setup" element={
         <PreventSetupAccess>
           <ProfileSetup />
         </PreventSetupAccess>
       } />
       
-      <Route path="/" element={
+      <Route path="/dashboard" element={
         <RequireSetup>
-          <MainLayout>
-            <Dashboard />
-          </MainLayout>
+          <SidebarProvider>
+            <MainLayout>
+              <Dashboard />
+            </MainLayout>
+          </SidebarProvider>
         </RequireSetup>
       } />
       
       <Route path="/profile" element={
         <RequireSetup>
-          <MainLayout>
-            <Profile />
-          </MainLayout>
+          <SidebarProvider>
+            <MainLayout>
+              <Profile />
+            </MainLayout>
+          </SidebarProvider>
         </RequireSetup>
       } />
       
       <Route path="/quests" element={
         <RequireSetup>
-          <MainLayout>
-            <Quests />
-          </MainLayout>
+          <SidebarProvider>
+            <MainLayout>
+              <Quests />
+            </MainLayout>
+          </SidebarProvider>
         </RequireSetup>
       } />
       
       <Route path="/daily-log" element={
         <RequireSetup>
-          <MainLayout>
-            <DailyLog />
-          </MainLayout>
+          <SidebarProvider>
+            <MainLayout>
+              <DailyLog />
+            </MainLayout>
+          </SidebarProvider>
         </RequireSetup>
       } />
 

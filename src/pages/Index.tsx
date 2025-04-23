@@ -1,3 +1,4 @@
+
 import { useApp } from "@/context/AppContext";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +10,7 @@ const Index = () => {
   useEffect(() => {
     // Redirect based on setup status
     if (isSetupComplete) {
-      navigate("/");
+      navigate("/dashboard");
     } else {
       navigate("/setup");
     }
