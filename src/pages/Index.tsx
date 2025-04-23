@@ -1,11 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useApp } from "@/context/AppContext";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const { isSetupComplete } = useApp();
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    // Redirect based on setup status
+    if (isSetupComplete) {
+      navigate("/");
+    } else {
+      navigate("/setup");
+    }
+  }, [isSetupComplete, navigate]);
+
+  // Loading state while redirecting
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-solo-purple-dark">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+        <h1 className="text-3xl font-bold mb-4 text-solo-purple-light">Solo Leveling</h1>
+        <p className="text-xl text-gray-400">Loading your hunter profile...</p>
       </div>
     </div>
   );

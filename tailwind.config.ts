@@ -61,7 +61,41 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                // Solo Leveling color theme
+                solo: {
+                    purple: {
+                        light: '#D6BCFA',
+                        DEFAULT: '#9b87f5',
+                        secondary: '#7E69AB',
+                        tertiary: '#6E59A5',
+                        dark: '#1A1F2C',
+                        accent: '#8B5CF6'
+                    },
+                    gray: {
+                        neutral: '#8E9196',
+                        charcoal: '#403E43',
+                        dark: '#221F26'
+                    },
+                    soft: {
+                        green: '#F2FCE2',
+                        yellow: '#FEF7CD',
+                        orange: '#FEC6A1',
+                        purple: '#E5DEFF',
+                        pink: '#FFDEE2',
+                        peach: '#FDE1D3',
+                        blue: '#D3E4FD',
+                        gray: '#F1F0FB'
+                    },
+                    rank: {
+                        e: '#808080', // gray
+                        d: '#006400', // dark green
+                        c: '#0000FF', // blue
+                        b: '#4B0082', // indigo
+                        a: '#8B0000', // dark red
+                        s: '#FFD700'  // gold
+                    }
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
