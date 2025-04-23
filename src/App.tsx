@@ -91,6 +91,26 @@ const AppRoutes = () => {
         </RequireSetup>
       } />
 
+      <Route path="/codex" element={
+        <RequireSetup>
+          <SidebarProvider>
+            <MainLayout>
+              <Codex />
+            </MainLayout>
+          </SidebarProvider>
+        </RequireSetup>
+      } />
+
+      <Route path="/settings" element={
+        <RequireSetup>
+          <SidebarProvider>
+            <MainLayout>
+              <Settings />
+            </MainLayout>
+          </SidebarProvider>
+        </RequireSetup>
+      } />
+
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
