@@ -1,12 +1,12 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { swords } from "lucide-react";
+import { Swords } from "lucide-react";
 
 const ShadowArmy = () => {
   return (
     <div className="container mx-auto px-4 py-6 space-y-6">
       <div className="flex items-center gap-2 mb-6">
-        <swords className="h-6 w-6 text-solo-purple-accent" />
+        <Swords className="h-6 w-6 text-solo-purple-accent" />
         <h1 className="text-2xl font-bold text-solo-purple-light">Shadow Army</h1>
       </div>
 
