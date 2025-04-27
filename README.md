@@ -39,7 +39,7 @@ Highlight the most important features of your project:
 
 ```
 # Clone the repo
-git clone https://github.com/shadow-monarch/habit-builder
+git clone https://github.com/ROHAN-089/hunter-habit-forge
 
 # Install dependencies
 cd habit-builder
