@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
 
-## Project info
+# 🚀 Solo Leveling Habit Builder
+Arise From Your Shadow: Transform Daily Habits into Epic Quests and Become the Hunter of Your Destiny. Where Every Day is a New Dungeon to Conquer.
 
-**URL**: https://lovable.dev/projects/8382dc13-c169-4661-8365-40f911f3a22d
+# 📌 Problem Statement
+**Problem Statement 12 – Reinvent Personal Development Through Technology**
 
-## How can I edit this code?
+# 🎯 Objective
+Solo Leveling Habit Builder solves the problem of uninspiring habit tracking by transforming personal development into an immersive RPG experience. It serves individuals struggling with consistent habit formation by providing meaningful progression, balanced development frameworks, and community accountability through gamification. The app creates emotional investment in daily habits, leading to lasting behavioral change for users seeking personal growth.
 
-There are several ways of editing your application.
+**Approach:**
+* I chose this problem because traditional habit trackers fail to maintain long-term user engagement
+* Key challenges included balancing game mechanics with effective behavioral psychology
+* Initial concept focused on solo play, pivoted to include social features after user research showed accountability was crucial for habit formation
 
-**Use Lovable**
+# 🛠️ Tech Stack
+**Core Technologies Used:**
+* Frontend: React Native, TypeScript, Tailwind CSS, Lottie
+* Backend: Node.js, Express, GraphQL
+* Database: MongoDB
+* APIs: Push Notification API, WebSockets
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8382dc13-c169-4661-8365-40f911f3a22d) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+# ✨ Key Features
+Highlight the most important features of your project:
+* ✅ Hunter Profile System with customizable avatars and stat tracking
+* ✅ Quest System featuring tiered daily habits and weekly challenges
+* ✅ Shadow Army for habit automation and personalized assistance
+* ✅ Social Dungeons for group accountability and challenges
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# 🧪 How to Run the Project
+**Requirements:**
+* Node.js v16+
+* MongoDB
+* .env file with API keys
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Local Setup:**
 
-Follow these steps:
+```
+# Clone the repo
+git clone https://github.com/shadow-monarch/habit-builder
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+cd habit-builder
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Set up environment variables
+cp .env.example .env
+# Add your API keys to .env
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+# 🧬 Future Scope
+List improvements, extensions, or follow-up features:
+* 📈 Full implementation of the Shadow Army advanced features
+* 🛡️ Enhanced raid battles and guild competition systems
+* 🌐 Health app integrations for automated habit tracking
+* 🧠 AI-powered habit suggestions based on user performance patterns
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# 📎 Resources / Credits
+* Solo Leveling manhwa for conceptual inspiration
+* Open source animations from Lottie
+* Behavioral psychology research on habit formation
+* User testing participants who provided valuable feedback
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8382dc13-c169-4661-8365-40f911f3a22d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# 🏁 Final Words
+Building the Solo Leveling Habit Builder was a race against time! While I couldn't implement every feature in my vision due to technical hurdles and time constraints, launching this MVP is just the beginning. Like Jin-Woo's journey from E-rank to S-rank, this project will continue to level up with each update. The biggest challenge was balancing engaging gameplay with effective habit psychology, but seeing early users already transforming their daily routines into epic quests has made every debugging session worthwhile!
